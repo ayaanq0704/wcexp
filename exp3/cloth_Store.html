@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Puma</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #000000;
+    }
+    .navbar {
+      background-color: #da0000;
+    }
+    .navbar-brand, .nav-link {
+      color: #000000 !important;
+    }
+    .navbar-brand img {
+      max-height: 40px;
+      margin-right: 10px;
+    }
+    .jumbotron {
+      background: url(puma.jpg) no-repeat center center;
+      background-size: cover;
+      color: white;
+      
+    }
+    .jumbotron .btn-primary {
+      background-color: #890000;
+      border: none;
+     
+    }
+    .breadcrumb {
+      background-color: #fffafa;
+    }
+    .card {
+      border: none;
+      transition: transform 0.3s ease-in-out;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+    }
+    .card-img-top {
+      height: 200px;
+      object-fit: cover;
+    }
+    .btn-primary {
+      background-color: #e60023;
+      border: none;
+    }
+    .btn-primary:hover {
+      background-color: #c5001e;
+    }
+    footer {
+      background-color: #b80000;
+      color: #000000dd;
+      padding: 10px 0;
+    }
+   h2 {
+    color: #fffafa;
+   }  
+
+   label {
+    color: #fffafa;
+   }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="#">
+      <img src="logo.png" alt="Puma Logo"> Puma
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Products</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Jumbotron -->
+  <div class="jumbotron text-center">
+    <h1 class="display-4">Welcome to Puma!</h1>
+    <p class="lead">The best place to find the latest fashion trends.</p>
+    <a class="btn btn-primary btn-lg" href="#" role="button">Shop Now</a>
+  </div>
+
+  <!-- Breadcrumb -->
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Products</li>
+    </ol>
+  </nav>
+
+  <!-- Grid System for Products -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img class="card-img-top" src="img2.avif" alt="Product 1">
+          <div class="card-body">
+            <h5 class="card-title"></h5>PLAY LOUD CLASSICS Graphic Men's
+            <p class="card-text">This summer isn’t just for the athletes, it’s for the trendsetters and noisemakers</p>
+            <a href="#" class="btn btn-primary">$499</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img class="card-img-top" src="img1.avif" alt="Product 2">
+          <div class="card-body">
+            <h5 class="card-title">PTRAIN FAV BLASTER Men's Training T-Shirt</h5>
+            <p class="card-text">Make your game smarter, faster, and better in modern sporting staples equipped with the latest in our innovative athletic technology..</p>
+            <a href="#" class="btn btn-primary">$899</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img class="card-img-top" src="img4.webp" alt="Product 3">
+          <div class="card-body">
+            <h5 class="card-title">French Terry Men's Training Pants</h5>
+            <p class="card-text">These French terry pants were designed to sit at the sweet spot between comfort, style, and functionality.</p>
+            <a href="#" class="btn btn-primary">$999</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Form -->
+  <div class="container mt-5">
+    <h2>Contact Us</h2>
+    <form>
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+      </div>
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea class="form-control" id="message" rows="3" placeholder="Your message"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center mt-5 py-4">
+    <p>&copy; 2024 Puma. All rights reserved.</p>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

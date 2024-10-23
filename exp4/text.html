@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Login Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="validate.js" defer></script>
+</head>
+<body>
+<div class="main">
+    <h1>Register Now!!</h1>
+    <h3>Enter your login credentials</h3>
+    <form action="">
+        <label for="name">
+            Full Name:
+        </label>
+        <input type="text" id="name" name="name" placeholder="Enter your Full Name" required>
+
+        <label for="password">
+            Password:
+        </label>
+        <input type="password" id="password" name="password" placeholder="Enter your Password" required>
+
+        <label for="email">
+            Email Id:
+        </label>
+        <input type="email" id="email" name="email" placeholder="Enter your Email Address" required>
+
+        <label for="number">
+            Phone Number:
+        </label>
+        <input type="number" id="number" name="number" placeholder="Enter your Phone number" required>
+
+        <div class="wrap">
+            <button type="submit" onclick="validate(event)">
+                Submit
+            </button>
+        </div>
+    </form>
+
+    <p>Not registered?
+        <a href="#" style="text-decoration: none;">Create an account</a>
+    </p>
+</div>
+</body>
+</html>
